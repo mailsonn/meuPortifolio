@@ -162,26 +162,64 @@ h2{
 .mini-Content{
     height: 18rem;
     display: flex;
-    justify-content: space-around;
+    gap: 2rem;
     align-items: center;
+    justify-content: center;
+}
+
+.interactProjects{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+.interactProjects .buttonRepository{
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #007ea7;
+    color: white;
+    box-shadow: 1px 1px 3px black;
+    transition: 0.3s;
+}
+.interactProjects .buttonLive{
+    padding: 0.5rem;
+    color: white;
+    border-radius: 5px;
+    background-color: #ff0054;
+    box-shadow: 1px 1px 3px black;
+    transition: 0.3s;
+}
+
+.buttonRepository:hover, .buttonLive:hover{
+box-shadow: 2px 4px 5px black;
+}
+
+.line-content{
+   margin-right: 10%;
+   margin-left: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: black;
 }
 
 .imgProject{
-    width: 30rem;
+    max-width: 30rem;
     height: 15rem;
 
 }
 
 .descriptionProject{
-    width: 30rem;
+    width: 28rem;
     height: 15rem;
 
 }
 
+
 .formation{
-    height: 50vh;
+    height: 100vh;
     width: 100%;
-   background-image: linear-gradient(to bottom, rgb(36, 35, 35), rgb(148, 148, 148));
+    background-image: linear-gradient(to bottom, rgb(36, 35, 35), rgb(148, 148, 148));
+
 }
 
 .formation h2{
@@ -232,7 +270,7 @@ h2{
 }
 
 footer{
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     background-image: linear-gradient(to bottom, rgb(148, 148, 148), rgb(36, 35, 35));
 }
